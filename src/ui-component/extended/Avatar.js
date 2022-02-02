@@ -13,7 +13,6 @@ const Avatar = ({ color, outline, size, sx, ...others }) => {
     const outlineSX = outline && {
         color: color ? `${color}.main` : `primary.main`,
         bgcolor: theme.palette.background.paper,
-        border: '2px solid',
         borderColor: color ? `${color}.main` : `primary.main`
     };
     let sizeSX = {};
@@ -44,8 +43,8 @@ const Avatar = ({ color, outline, size, sx, ...others }) => {
             break;
         case 'xl':
             sizeSX = {
-                width: theme.spacing(10.25),
-                height: theme.spacing(10.25)
+                width: theme.spacing(16.25),
+                height: theme.spacing(16.25)
             };
             break;
         case 'md':

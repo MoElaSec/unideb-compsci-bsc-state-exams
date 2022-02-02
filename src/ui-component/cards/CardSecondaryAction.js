@@ -7,11 +7,11 @@ import Avatar from '../extended/Avatar';
 
 // ==============================|| CARD SECONDARY ACTION ||============================== //
 
-const CardSecondaryAction = ({ title, link, icon }) => {
+const CardSecondaryAction = ({ title, link, icon, size, onClick }) => {
     const theme = useTheme();
 
     return (
-        <Tooltip title={title || 'Reference'} placement="left">
+        <Tooltip title={title || 'Reference'} placement="left" onClick={onClick}>
             <ButtonBase disableRipple>
                 {!icon && (
                     <Avatar component={Link} href={link} target="_blank" alt="MUI Logo" size="badge" color="primary" outline>
@@ -40,7 +40,7 @@ const CardSecondaryAction = ({ title, link, icon }) => {
                     </Avatar>
                 )}
                 {icon && (
-                    <Avatar component={Link} href={link} target="_blank" size="badge" color="primary" outline>
+                    <Avatar component={Link} href={link} target="_blank" size={size || 's'} color="primary" outline>
                         {icon}
                     </Avatar>
                 )}
@@ -52,7 +52,9 @@ const CardSecondaryAction = ({ title, link, icon }) => {
 CardSecondaryAction.propTypes = {
     icon: PropTypes.node,
     link: PropTypes.string,
-    title: PropTypes.string
+    title: PropTypes.string,
+    size: PropTypes.string,
+    onClick: PropTypes.func
 };
 
 export default CardSecondaryAction;

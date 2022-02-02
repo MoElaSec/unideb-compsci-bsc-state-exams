@@ -4,18 +4,13 @@ import { lazy } from 'react';
 import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 
-// dashboard routing
-const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
-
-// utilities routing
-const UtilsTypography = Loadable(lazy(() => import('views/utilities/Typography')));
-const UtilsColor = Loadable(lazy(() => import('views/utilities/Color')));
-const UtilsShadow = Loadable(lazy(() => import('views/utilities/Shadow')));
-const UtilsMaterialIcons = Loadable(lazy(() => import('views/utilities/MaterialIcons')));
-const UtilsTablerIcons = Loadable(lazy(() => import('views/utilities/TablerIcons')));
-
-// sample page routing
-const SamplePage = Loadable(lazy(() => import('views/sample-page')));
+const AboutAuthor = Loadable(lazy(() => import('views/about/author')));
+const AboutStateExams = Loadable(lazy(() => import('views/about/state-exams')));
+const StateExamsMathematics = Loadable(lazy(() => import('views/state-exams/mathematics-compsci')));
+const StateExamsInformatics = Loadable(lazy(() => import('views/state-exams/informatics')));
+const YoutubeLinks = Loadable(lazy(() => import('views/youtube-links')));
+const Contribution = Loadable(lazy(() => import('views/contribution')));
+const OtherDocs = Loadable(lazy(() => import('views/other-docs')));
 
 // ==============================|| MAIN ROUTING ||============================== //
 
@@ -25,35 +20,35 @@ const MainRoutes = {
     children: [
         {
             path: '/',
-            element: <DashboardDefault />
+            element: <AboutAuthor />
         },
         {
-            path: '/dashboard/default',
-            element: <DashboardDefault />
+            path: '/about/author',
+            element: <AboutAuthor />
         },
         {
-            path: '/utils/util-typography',
-            element: <UtilsTypography />
+            path: '/about/state-exams',
+            element: <AboutStateExams />
         },
         {
-            path: '/utils/util-color',
-            element: <UtilsColor />
+            path: '/youtube-links',
+            element: <YoutubeLinks />
         },
         {
-            path: '/utils/util-shadow',
-            element: <UtilsShadow />
+            path: '/state-exams/mathematics',
+            element: <StateExamsMathematics />
         },
         {
-            path: '/icons/tabler-icons',
-            element: <UtilsTablerIcons />
+            path: '/state-exams/informatics',
+            element: <StateExamsInformatics />
         },
         {
-            path: '/icons/material-icons',
-            element: <UtilsMaterialIcons />
+            path: '/other-docs',
+            element: <OtherDocs />
         },
         {
-            path: '/sample-page',
-            element: <SamplePage />
+            path: '/contribution',
+            element: <Contribution />
         }
     ]
 };

@@ -1,14 +1,14 @@
 import { Outlet } from 'react-router-dom';
 
 // project imports
-import Customization from '../Customization';
+import ShareButton from '../Share';
 
 // ==============================|| MINIMAL LAYOUT ||============================== //
 
 const MinimalLayout = () => (
     <>
         <Outlet />
-        <Customization />
+        <ShareButton />
     </>
 );
 

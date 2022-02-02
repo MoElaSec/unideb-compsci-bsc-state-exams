@@ -1,31 +1,35 @@
 // assets
-import { IconBrandChrome, IconHelp } from '@tabler/icons';
+import { IconHelp, IconBrandYoutube, IconFile } from '@tabler/icons';
 
 // constant
-const icons = { IconBrandChrome, IconHelp };
+const icons = { IconHelp, IconBrandYoutube, IconFile };
 
-// ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
+// ==============================|| OTHER MENU ITEMS ||============================== //
 
 const other = {
-    id: 'sample-docs-roadmap',
+    id: 'others',
     type: 'group',
     children: [
         {
-            id: 'sample-page',
-            title: 'Sample Page',
+            id: 'youtube',
+            title: 'Youtube/Video Links',
             type: 'item',
-            url: '/sample-page',
-            icon: icons.IconBrandChrome,
-            breadcrumbs: false
+            url: '/youtube-links',
+            icon: icons.IconBrandYoutube
         },
         {
-            id: 'documentation',
-            title: 'Documentation',
+            id: 'docs',
+            title: 'Other Docs',
             type: 'item',
-            url: 'https://codedthemes.gitbook.io/berry/',
-            icon: icons.IconHelp,
-            external: true,
-            target: true
+            url: '/other-docs',
+            icon: icons.IconFile
+        },
+        {
+            id: 'contribution',
+            title: 'Contribution',
+            type: 'item',
+            url: '/contribution',
+            icon: icons.IconHelp
         }
     ]
 };

@@ -5,14 +5,16 @@ import { ButtonBase } from '@mui/material';
 
 // project imports
 import config from 'config';
-import Logo from 'ui-component/Logo';
 
 // ==============================|| MAIN LOGO ||============================== //
 
 const LogoSection = () => (
-    <ButtonBase disableRipple component={Link} to={config.defaultPath}>
-        <Logo />
-    </ButtonBase>
+    <div>
+        <ButtonBase disableRipple component={Link} to={config.defaultPath}>
+            <img src="/logos/university-logo.png" alt="Hello" width={60} height={60} />
+            <h4>IK Comp.Sci</h4>
+        </ButtonBase>
+    </div>
 );
 
 export default LogoSection;

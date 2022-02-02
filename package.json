@@ -2,7 +2,7 @@
     "name": "berry-material-react-free",
     "version": "3.0.1",
     "private": true,
-    "homepage": "https://berrydashboard.io/free",
+    "homepage": "https://compsci-exams.netlify.app/",
     "dependencies": {
         "@emotion/cache": "^11.4.0",
         "@emotion/react": "^11.4.0",
@@ -35,6 +35,7 @@
         "react-router-dom": "6.0.0-beta.0",
         "react-scripts": "^4.0.3",
         "redux": "^4.0.5",
+        "styled-components": "^5.3.3",
         "yup": "^0.32.9"
     },
     "scripts": {
