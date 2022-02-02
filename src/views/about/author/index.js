@@ -16,8 +16,8 @@ export default function AboutAuthor() {
                 <TopWrapper>
                     <Avatar src="/images/author.png" alt="dd:" width={200} size="xl" />
                     <Grid>
-                        <h1>Abdulrahim Iliasu Illo</h1>
-                        <h3>Bsc. Computer Science Graduate</h3>
+                        <h2>Abdulrahim Iliasu Illo</h2>
+                        <h4>Bsc. Computer Science Graduate</h4>
                     </Grid>
                 </TopWrapper>
                 <BottomWrapper>
